@@ -3,7 +3,7 @@
 # если год високосный, и False иначе.
 
 def is_year_leap(_year):
-    print((_year%4)==0)
+    print((year % 4 == 0 and year % 100 != 0) or year % 400 == 0)
 
 year = int(input("Enter year you want check: "))
 is_year_leap(year)
